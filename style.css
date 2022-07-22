@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Paytone+One&family=Poppins:wght@400;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+  --shadow-color: 38deg 34% 52%;}
+
+nav{
+    padding:1em 8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100px;
+    background-color: #eec9ba;
+    /* position: sticky;
+    top: 0;
+     */
+    
+}
+nav ul{
+    display: flex;
+}
+ nav li{
+    font-size: 20px;
+    list-style: none;
+    margin-left: 50px;
+    font-weight: bold;
+    
+}
+ li:hover{
+    color:#286fae;
+    
+    
+}
+.logo{
+    font-size: 30px;
+    color:#286fae;
+    font-family: 'Libre Baskerville', serif;
+} 
+a{
+    text-decoration:none; 
+    color:#fff;
+}
+
+nav span{
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color:#FFF
+}
+nav span:hover{
+    color:#286fae
+}
+button{
+    width:120px;
+    padding:10px 15px;
+    border: none;
+    font-size: 16px;
+    color:#FFF;
+    background: #286fae;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+    
+    
+}
+button:hover{
+    background-color: #86b1d6;
+}
+button:active{
+    background-color: #aed0ee;
+}
+
+.intro-btn{
+    width:160px;
+    padding:14px 20px;
+    margin-top:1em;
+    
+}
+.intro{
+    width:100%;
+    height:100vh;
+    background-image: url(images/friend.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:0px 100px;
+}
+.big-world{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h1{
+    color:#286fae;
+    padding-top: 2em;
+    font-size: 60px;
+    font-family: 'Paytone One', sans-serif;
+}
+.intro span{
+    color:rgb(249, 214, 77);
+}
+.SignUpForm{
+    width:400px;
+    min-height:400px ;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:12em;
+    text-align: center;
+    border: none;
+    border-radius: 16px;
+    position:relative;
+}
+.SignUpForm input{
+    width: 20em;
+    min-height: 2em;
+    margin-bottom: 1.5em;
+    padding:12px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    
+}
+.signUp-container{
+    padding-top:28px;
+    
+}
+.signUp-container i{
+    font-size: 2rem;
+    padding-top: 0.3em;
+    color:#4286c2;
+    position: absolute;
+    right:0.5em;
+    top:0;
+    cursor: pointer;
+}
+.signUp-container i:hover{
+    color:#78a8d1
+}
+.signUp-container i:active{
+    color: #286fae;
+}
+.SignUpForm::backdrop{
+    background-color: lightgrey;
+    opacity:0.4;
+}
+
+
+
+
+/*______________Service________________*/
+.serve{
+    padding:8em 8em;
+    background-color:#B2C8DF;
+}
+
+
+.serve h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color:#286fae;
+    font-family: 'Paytone One', sans-serif;
+    /* font-family: 'Libre Baskerville', serif; */
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5em;
+}
+.card h3{
+    font-size: 24px;
+    margin-bottom: 12px;
+    
+}
+.card i{
+    font-size: 44px;
+    margin-bottom: 14px;
+}
+.fa-star{
+    color:#f48154
+}
+.fa-earth-americas{
+    color:rgb(64, 134, 239)
+}
+
+
+
+
+
+/*___________Price_____________  */
+
+
+
+.popularDestination{
+    padding:8em 8em;
+    
+}
+.popular{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 3.5em; */
+}
+.popular h2{
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif; 
+}
+.number{
+    color:#286fae;
+    font-size: 20px;
+}
+
+.design{
+    display: flex;
+    margin-top: 8px;
+}
+.stick{
+    width:2px;
+    height:50px;
+    border: 1px solid;
+    border: none;
+    background-color: #286fae;
+}
+.design p{
+    margin-left: 12px;
+    font-size: 18px;
+}
+.cardsContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+}
+.cards{
+    width:300px;
+    /* min-height: 400px; */
+    background-color:#fbfdff ;
+    padding:10px;
+    border-radius:8px;
+    cursor: pointer;
+    box-shadow: 2px 3px 34px -13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 3px 34px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 34px -13px rgba(0,0,0,0.75);
+    transition:transform 200ms ease-in-out;
+    
+    
+}
+.cards:hover{
+    transform:translate(8px,-8px)
+}
+
+
+.cards-header h4{
+    font-size: 24px;
+}
+.cards-header img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.cards-bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color:rgb(90, 88, 88)
+}
+.cards-bottom span{
+    color:#286fae;
+    
+}
+.cards-bottom i{
+    margin-right: 12px;
+    color:#286fae;
+}
+.cards button{
+    margin-top: 12px;
+
+}
+
+
+
+/*___________Get start_____________*/
+
+.view{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#eee2e2;
+    padding:8em 8em;
+    
+}
+
+.imgContainer{
+    width:400px;
+    padding:20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow:    0.8px 0.6px 1.1px hsl(var(--shadow-color) / 0.41),
+    2.6px 2.2px 3.8px -0.8px hsl(var(--shadow-color) / 0.41),
+    6.6px 5.5px 9.7px -1.7px hsl(var(--shadow-color) / 0.41),
+    16.2px 13.4px 23.7px -2.5px hsl(var(--shadow-color) / 0.41);}
+
+.imgContainer .img-item{
+    display: none;
+}
+.imgContainer .visible{
+    display: block;
+    
+}
+.img-item img{
+    width:100%;
+    object-fit: cover;
+    
+}
+.btn-container{
+    margin-left:50px;
+
+}
+.getStarted{
+    text-align: center;
+    line-height: 60px;
+}
+.getStarted h2{
+    font-size: 40px;
+}
+
+
+
+
+
+/*____________BooKing Form__________*/
+
+
+
+.bookingForm{
+    background-color: #B2C8DF;
+    display: flex;
+    justify-content: space-between;
+    padding:8em 8em;
+    align-items:center;
+    
+}
+.bookingForm h3{
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    
+    
+}
+form{
+    width:400px;
+    min-height: 400px;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 1em;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow:0px 0.2px 0.2px hsl(var(--shadow-color) / 0.38),
+    0.3px 1.2px 1.4px -0.4px hsl(var(--shadow-color) / 0.38),
+    0.6px 2.3px 2.7px -0.7px hsl(var(--shadow-color) / 0.38),
+    1px 3.7px 4.3px -1.1px hsl(var(--shadow-color) / 0.38),
+    1.5px 6px 7px -1.4px hsl(var(--shadow-color) / 0.38),
+    2.4px 9.3px 10.8px -1.8px hsl(var(--shadow-color) / 0.38),
+    3.6px 14.2px 16.5px -2.1px hsl(var(--shadow-color) / 0.38),
+    5.4px 21px 24.4px -2.5px hsl(var(--shadow-color) / 0.38);
+}
+form input,select {
+    width:290px;
+    height:40px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid lightgray;
+}
+.safe-trip{
+    display: none;
+    margin-top: 1em;
+}
+.show{
+    display: block;
+}
+
+.safe-trip h4{
+    color:#286fae;
+    
+}
+.enjoy{
+    line-height: 1.5em;
+    margin-right: 1em;
+    color:#000
+}
+.enjoy .fa-circle-check{
+    color:#286fae
+}
+.line{
+    display: flex;
+    color:#FFF;
+    /* font-family: 'Libre Baskerville', serif; */
+    align-items: center;
+
+    
+    
+}
+.air{
+    width:12em;
+    min-height:400px;
+    border: 1px solid;
+    background-image: url(images/air2.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 12em;
+    margin-right: 2em;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 200ms linear;
+    border-radius: 16px;
+}
+.air:hover{
+    transform: translate(4px,-4px);
+    
+}
+
+.bus{
+    width:12em;
+    min-height:400px;
+    border: 1px solid;
+    background-image: url(images/bus.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 12em;
+    margin-right: 2em;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 200ms linear;
+    border-radius: 16px;
+}
+.bus:hover{
+    transform: translate(4px,-4px);
+    
+}
+.train{
+    width:12em;
+    min-height:400px;
+    border: 1px solid;
+    background-image: url(images/train3.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 12em;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 200ms linear;
+    border-radius: 16px;
+}
+.train:hover{
+    transform: translate(4px,-4px);
+    
+}
+
+
+
+
+/* _____________FOOTER______________*/
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding:30px 100px;
+    position: relative;
+    
+    
+}
+footer .bottom-logo{
+    margin-bottom: 12px;
+}
+.first-li{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #000;
+
+}
+footer li{
+    list-style: none;
+    color: rgb(61, 59, 59);
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    
+}
+footer p{
+    color:rgb(61, 59, 59); 
+}
+.icons{
+    font-size: 1.5rem;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+.icons:hover{
+    color:#286fae;
+}
+.box{
+    width:20em;
+    height:3em;
+    border-radius:20px;
+    border: 1px solid lightgrey;
+    padding-left: 1em;
+    outline: none;
+}
+.box-btn{
+    width:3em;
+    position: absolute;
+    right:100px;
+}
